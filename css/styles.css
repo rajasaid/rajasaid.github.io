@@ -89,9 +89,8 @@ html, body {
     background: cornsilk;
     min-height: 100%;
     display: flex;
-    flex-flow: column;
-    /* justify-content: center; */
-    align-items: center;
+    /* flex-flow: row; */
+    justify-content: center;
 }
 
 
@@ -115,12 +114,11 @@ html, body {
 }
 
 .icon-bar {
-    position:fixed;
-    /* left: 20%;  */
-    transform: translateX(400%);
-    float:right;
+    position:relative;
+    left: 50%;
+    top: 50%;  
     display: flex;
-    justify-content:space-between;
+    flex-flow: column;
     align-items:space-between;
 }
 
@@ -195,9 +193,19 @@ html, body {
     grid-row: 3 / 4;
     min-height: 100%;
     justify-items: center;
+    overflow-x: scroll;
+    overflow-y: scroll;
 }
+
 .footer {
     grid-column: 1 / -1;
     background:#555555;
+    background: url("../img/footer.jpg") center no-repeat;
+    background-size: cover;
+    background-blend-mode: luminosity;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
