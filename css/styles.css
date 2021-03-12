@@ -322,7 +322,7 @@ html, body {
     font-size: 70%;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-height: 450px) {
     .container {
         display: grid;
         grid-template: 200px 50px minmax(auto,1fr) 50px / repeat(12,1fr);
@@ -339,7 +339,5 @@ html, body {
     .vertical {
         max-height: 90px;
     }
-    /* body { */
-        /* background:rgb(190, 159, 159); */
-    /* } */
-}
+
+} 
