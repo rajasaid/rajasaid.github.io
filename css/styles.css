@@ -110,7 +110,7 @@ html, body {
     font-size: 150%;
 }
 .link {
-    list-style-type: lower-greek;
+    list-style-type: lower-roman;
 }
 .title {
     text-decoration: none;
@@ -218,6 +218,8 @@ html, body {
     grid-row: 3 / 4;
     min-height: 100%;
     justify-items: center;
+    display: flex;
+    flex-flow: column;
     overflow-x: scroll;
     overflow-y: scroll;
 }
@@ -234,4 +236,69 @@ html, body {
     justify-content: center;
     align-items: center;
 }
+.card_box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card_box h3 {
+    text-align: center;
+}
+.card_gothic2, .card_you_programming1 {
+    
+    width: 500px;
+    height: 180px;
+    color: ghostwhite;
+    box-shadow: black;
+    transition: all 0.3 ease;
+    border-radius: 8px;
+    margin: 20px 50px;
+    z-index: 2px;
+    display: flex;
+}
 
+.card_notes101 {
+    background: darkgoldenrod;
+    width: 1000px;
+    height: 230px;
+    color: ghostwhite;
+    box-shadow: black;
+    transition: all 0.3 ease;
+    border-radius: 8px;
+    margin: 20px 50px;
+    z-index: 2px;
+    display: flex;
+}
+.card_notes101 img {
+    padding: 10px 20px;
+}
+.card_you_programming1 {
+    background: rgb(190, 159, 159);
+}
+
+.card_gothic2 {
+    background: rgb(23,143,191);
+}
+
+.content iframe {
+    padding: 10px 20px;
+}
+
+#app_start, #content_home, #videos_start {
+    font-style: italic;
+}
+#content_home {
+    align-self: center;
+    width: 70px;
+    font-size: 150%;
+    border-bottom: 2px solid darkgoldenrod;
+}
+
+#app_start, #videos_start {
+    margin: 0px 30px;
+}
+
+.gothic, .application, .readless {
+    margin: 10px 20px;
+    font-size: 125%;
+    shape-outside: circle(50%);
+}
