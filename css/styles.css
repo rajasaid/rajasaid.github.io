@@ -263,7 +263,7 @@ html, body {
     box-shadow: 3px 3px 5px 6px black;
     transition: all 0.3 ease;
     border-radius: 8px;
-    margin: 20px 50px;
+    margin: 20px 30px;
     z-index: 2px;
     display: flex;
 }
@@ -276,7 +276,7 @@ html, body {
     box-shadow: 3px 3px 5px 6px black;
     transition: all 0.3 ease;
     border-radius: 8px;
-    margin: 20px 50px;
+    margin: 20px 30px;
     z-index: 2px;
     display: flex;
 }
@@ -339,5 +339,10 @@ html, body {
     .vertical {
         max-height: 90px;
     }
-
 } 
+
+@media screen and (max-width: 450px) {
+    .application, .readless, .gothic, .name, .intro { 
+        font-size: 60%;
+    }
+}
