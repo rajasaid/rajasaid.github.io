@@ -295,10 +295,8 @@ html, body {
     padding: 20px 20px;
 }
 
-#app_start, #content_home, #videos_start {
-    font-weight: bold;
-}
 #content_home {
+    font-weight: bold;
     align-self: center;
     width: 70px;
     font-size: 150%;
