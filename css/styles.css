@@ -63,12 +63,12 @@ html, body {
     display: grid;
     height: 100%;
     grid-template: 300px 50px minmax(auto,1fr) 50px / repeat(12,1fr);
-     justify-items:stretch;
-   justify-content: center;
-   align-content: center;
-   align-items: stretch;
-   
+    justify-items:stretch;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;   
 }
+
 
 .header {
     grid-column: 1 / -1;
@@ -321,3 +321,21 @@ html, body {
     font-size: 70%;
 }
 
+@media screen and (max-width: 450px) {
+    .container {
+        display: grid;
+        grid-template: 150px 50px minmax(auto,1fr) 50px / repeat(12,1fr);
+        height: 100;
+        justify-items:stretch;
+        justify-content: center;
+        align-content: center;
+        align-items: stretch;
+    }   
+    .person_img img {
+        width: 50px;
+        height: 90px;
+    }
+    /* body { */
+        /* background:rgb(190, 159, 159); */
+    /* } */
+}
