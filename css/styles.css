@@ -87,7 +87,7 @@ html, body {
 
 .menu {
     grid-column: 1 / 3;
-    grid-row: 2 / 5;
+    grid-row: 3 / 4;
     /* background: linear-gradient(45deg, cornsilk, rgba(13, 14, 11, 0.4)); */
     background: url("../img/menu.png") center no-repeat;
     background-size: cover;
@@ -127,23 +127,73 @@ html, body {
     text-decoration: none;
 }
 .navbar {
-    grid-column: 3 / -1;
+    grid-column: 1 / -1;
     grid-row: 2 / 3;
     background: black;
-    display: flex;
-    justify-content: left;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
 }
-.navbar > a {
+nav {
+    grid-column: 3 / -1;
+    width: 100%;
+    align-self: center;
+    position: relative;
+    left: -4%;
+}
+
+nav ul {
+    display:flex;
+    width: 100%;
+    /* flex-flow: row; */
+    /* align-items: center; */
+    /* justify-items: center; */
+}
+
+nav li {
+    list-style: none;
+    margin: 0 20px;
+} 
+nav a {
     text-decoration: none;
     cursor: pointer;
     background-color:black; 
     width: 150px;
     height: 35px;
-    float: left;
     margin-top:  15px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
+.htmltxt{
+    color: #898989;
+    background: black;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Verdana; 
+  }
+  .htmltxt:hover {
+    color: #f06a00;
+  }
+
+  .htmltxt:active {
+      color: red;
+      border:none;
+  }
+
+.nav_brand {
+    grid-column: 1 / span 2;
+    background-color: black;
+    width: 60px;
+    height: 36px;
+    transform: translateY(25%);
+}
+
+.nav_brand img {
+    height:50px;
+    width: 50px;
+    float: left;
+    margin-left: 3px;
+    margin-top: -7px;
+    position: relative;
+  }
 
 .icon-bar {
     position:relative;
@@ -193,35 +243,6 @@ html, body {
     background: #bb0000;
     color: white;
   }
-.htmltxt{
-    color: #898989;
-    background: black;
-    font-weight: bold;
-    font-size: 16px;
-    font-family: Verdana; 
-  }
-  .htmltxt:hover {
-    color: #f06a00;
-  }
-
-  .htmltxt:active {
-      color: red;
-      border:none;
-  }
-.nav_brand {
-    border: 2px solid black;
-    background-color: black;
-    width: 60px;
-    height: 36px;
-}
-.nav_brand img {
-    height:50px;
-    width: 50px;
-    float: left;
-    margin-left: 3px;
-    margin-top: -7px;
-    position: relative;
-  }
 
     
 .content { 
@@ -236,7 +257,7 @@ html, body {
 }
 
 .footer {
-    grid-column: 3 / -1;
+    grid-column: 1 / -1;
     grid-row: 4 / -1;
     background:#555555;
     background: url("../img/footer.jpg") center no-repeat;
@@ -250,7 +271,9 @@ html, body {
 .card_box {
     display: flex;
     flex-wrap: wrap;
-    margin: 30px 10px;
+    margin: 30px 10px 100px 0;
+    /* margin-bottom: 100px; */
+    /* margin-top: 30px; */
 }
 .content h3 {
     margin: 30px 10px;
@@ -263,7 +286,7 @@ html, body {
     box-shadow: 3px 3px 5px 6px black;
     transition: all 0.3 ease;
     border-radius: 8px;
-    margin: 20px 30px;
+    margin: 30px 30px;
     z-index: 2px;
     display: flex;
 }
@@ -309,16 +332,15 @@ html, body {
 }
 
 .gothic, .application, .readless {
-    margin: 10px 20px;
+    margin: 10px 0px;
     font-size: 125%;
     max-width: 40ch;
     text-overflow: ellipsis;
-    /* shape-outside: circle(50%); */
+    overflow: hidden;
+    display: inline-block;
+    min-width: 10ch;
 }
 
-.application span {
-    font-size: 70%;
-}
 
 @media screen and (max-height: 450px) {
     .container {
@@ -340,7 +362,7 @@ html, body {
 } 
 
 @media screen and (max-width: 450px) {
-    .application, .readless, .gothic, .name, .intro { 
+    .application, .readless, .gothic { 
         font-size: 60%;
     }
 }
