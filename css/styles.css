@@ -385,9 +385,10 @@ nav a {
     }
 
     .nav_menu {
+        display: none;
         all:unset;
     }
-    
+
     .toggle_navbar input {
         display: block;
         width: 40px;
