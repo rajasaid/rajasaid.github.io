@@ -380,6 +380,14 @@ nav a {
 } 
 
 @media screen and (max-width: 500px) {
+    
+    .menu {
+        display: none;
+    }
+    .content { 
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }    
     .application, .readless, .gothic { 
         font-size: 60%;
     }
@@ -467,8 +475,8 @@ nav a {
       /* list-style-type: none; */
       -webkit-font-smoothing: antialiased;
       /* to stop flickering of text in safari */
-      transform-origin: right;
-      /* transform: translate(-100%, 0); */
+      transform-origin: top;
+      transform: none;
       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     }
     
