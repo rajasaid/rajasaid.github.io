@@ -282,45 +282,51 @@ nav a {
 .card_box {
     display: flex;
     flex-wrap: wrap;
+    flex-flow: column;
+    align-items: center;
     margin: 30px 10px 100px 0;
 }
-.content h3 {
+/* .content h3 {
     margin: 30px 10px;
-}
-.card_gothic2, .card_you_programming1 {
+} */
+.card_gothic2, .card_you_programming1, .card_you_programming2 {
     
     width: 500px;
     height: 180px;
     color: ghostwhite;
-    box-shadow: 3px 3px 5px 6px black;
-    transition: all 0.3 ease;
+    box-shadow: 3px 3px 5px 0 black;
+    transition: all 0.3s ease;
     border-radius: 8px;
     margin: 30px 30px;
-    z-index: 2px;
     display: flex;
 }
 
 .card_notes101 {
-    background: darkgoldenrod;
+    background: linear-gradient(rgba(184,134,11,0.5), rgba(184,134,11,1));
     width: 600px;
     height: 230px;
     color: ghostwhite;
-    box-shadow: 3px 3px 5px 6px black;
-    transition: all 0.3 ease;
+    box-shadow: 3px 3px 5px 0 black;
+    transition: all 0.3s ease;
     border-radius: 8px;
     margin: 20px 30px;
-    z-index: 2px;
     display: flex;
 }
+
 .card_notes101 img {
     padding: 20px 20px;
 }
+
 .card_you_programming1 {
-    background: rgb(190, 159, 159);
+    background: linear-gradient(rgba(190, 159, 159,0.5),rgba(190, 159, 159,1));
+}
+
+.card_you_programming2 {
+    background: linear-gradient(rgba(123,10,210,0.5),rgba(123,10,210,1));
 }
 
 .card_gothic2 {
-    background: rgb(23,143,191);
+    background: linear-gradient(rgba(23,143,191,0.5), rgba(23,143,191,1));
 }
 
 .content iframe {
@@ -340,11 +346,11 @@ nav a {
     margin: 0px 30px;
 }
 
-.gothic, .application, .readless {
+.gothic, .application, .readless, .flack {
     margin: 10px 0px;
     font-size: 125%;
     max-width: 40ch;
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis; */
     overflow: hidden;
     display: inline-block;
     min-width: 10ch;
@@ -396,10 +402,10 @@ nav a {
     .application  { 
         font-size: 80%;
     }
-    .readless, .gothic {
+    .flack, .readless, .gothic {
         font-size: 100%;
     }
-    
+
     .toggle_navbar {
         display: flex;
         flex-flow: row-reverse;
