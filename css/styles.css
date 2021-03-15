@@ -284,11 +284,9 @@ nav a {
     flex-wrap: wrap;
     flex-flow: column;
     align-items: center;
-    margin: 30px 10px 100px 0;
+    margin: 25px 0;
 }
-/* .content h3 {
-    margin: 30px 10px;
-} */
+
 .card_gothic2, .card_you_programming1, .card_you_programming2 {
     
     width: 500px;
@@ -297,7 +295,7 @@ nav a {
     box-shadow: 3px 3px 5px 0 black;
     transition: all 0.3s ease;
     border-radius: 8px;
-    margin: 30px 30px;
+    margin: 25px 0;
     display: flex;
 }
 
@@ -309,7 +307,7 @@ nav a {
     box-shadow: 3px 3px 5px 0 black;
     transition: all 0.3s ease;
     border-radius: 8px;
-    margin: 20px 30px;
+    margin: 25px 0;
     display: flex;
 }
 
@@ -342,9 +340,6 @@ nav a {
     margin-top: 50px;
 }
 
-#app_start, #videos_start {
-    margin: 0px 30px;
-}
 
 .gothic, .application, .readless, .flack {
     margin: 10px 0px;
