@@ -379,14 +379,20 @@ nav a {
     }
 } 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     .application, .readless, .gothic { 
         font-size: 60%;
     }
 
+    .toggle_navbar {
+        display: flex;
+        flex-flow: row-reverse;
+        align-content: center;
+    }
+
     .nav_menu {
-        display: none;
         all:unset;
+        display: none;
     }
 
     .toggle_navbar input {
@@ -449,14 +455,13 @@ nav a {
     .toggle_navbar input:checked ~ .nav_menu
     {  
       position: absolute;
-      /* left: 20%; */
-      transform: translate(-30%,50%);
+      /* transform: translate(-30%,50%); */
       width: 200px;
       height: 250px;
       display: flex;
       flex-flow: column;
       justify-content: space-evenly;
-      margin-top:50px;
+      /* margin-top:50px; */
       background: black;
       color:blanchedalmond;
       /* list-style-type: none; */
