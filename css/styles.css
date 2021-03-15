@@ -214,11 +214,29 @@ nav a {
 
 
 
+
+
+  /* content  */
+.content { 
+    grid-column: 3 / -1;
+    grid-row: 3 / 4;
+    min-height: 100%;
+    justify-items: center;
+    display: flex;
+    flex-flow: column;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.icons {
+    display: block;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%,100%);
+}
 /* social media bar */
 .icon-bar {
-    position:relative;
-    left: 67%;
-    top:50%;
     display: flex;
     flex-flow: column;
     align-items:space-between;
@@ -259,19 +277,6 @@ nav a {
     background: #bb0000;
     color: white;
   }
-
-
-  /* content  */
-.content { 
-    grid-column: 3 / -1;
-    grid-row: 3 / 4;
-    min-height: 100%;
-    justify-items: center;
-    display: flex;
-    flex-flow: column;
-    overflow-x: scroll;
-    overflow-y: scroll;
-}
 
 
 .card_box {
@@ -388,10 +393,13 @@ nav a {
         grid-column: 1 / -1;
         grid-row: 3 / 4;
     }    
-    .application, .readless, .gothic { 
-        font-size: 90%;
+    .application  { 
+        font-size: 80%;
     }
-
+    .readless, .gothic {
+        font-size: 100%;
+    }
+    
     .toggle_navbar {
         display: flex;
         flex-flow: row-reverse;
