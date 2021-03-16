@@ -393,11 +393,14 @@ nav a {
     .content { 
         grid-column: 1 / -1;
         grid-row: 3 / 4;
-    }    
-    .application  { 
+    } 
+    .card_notes101, .card_gothic2, .card_you_programming1, .card_you_programming2 {
+        width: 450px;
+    }   
+    .application, .readless  { 
         font-size: 80%;
     }
-    .flack, .readless, .gothic {
+    .flack, .gothic {
         font-size: 100%;
     }
 
