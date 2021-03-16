@@ -1,0 +1,76 @@
+.card_box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.card_gothic2, .card_you_programming1, .card_you_programming2 {
+    
+    width: 500px;
+    height: 180px;
+    color: ghostwhite;
+    box-shadow: 3px 3px 5px 0 black;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    margin: 25px 0;
+    display: flex;
+}
+
+.card_notes101 {
+    background: linear-gradient(rgba(184,134,11,0.5), rgba(184,134,11,1));
+    width: 600px;
+    height: 230px;
+    color: ghostwhite;
+    box-shadow: 3px 3px 5px 0 black;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    margin: 25px 0;
+    display: flex;
+}
+
+.card_notes101 img {
+    padding: 20px 20px;
+}
+
+.card_you_programming1 {
+    background: linear-gradient(rgba(190, 159, 159,0.5),rgba(190, 159, 159,1));
+}
+
+.card_you_programming2 {
+    background: linear-gradient(rgba(123,10,210,0.5),rgba(123,10,210,1));
+}
+
+.card_gothic2 {
+    background: linear-gradient(rgba(23,143,191,0.5), rgba(23,143,191,1));
+}
+
+.content iframe {
+    padding: 20px 20px;
+}
+
+
+.gothic, .application, .readless, .flack {
+    margin: 10px 0px;
+    font-size: 125%;
+    max-width: 40ch;
+    overflow: hidden;
+    display: inline-block;
+    min-width: 10ch;
+}
+
+
+@media screen and (max-width: 500px) {
+    
+    .card_notes101, .card_gothic2, .card_you_programming1, .card_you_programming2 {
+        width: 450px;
+    }   
+    .application, .readless  { 
+        font-size: 80%;
+    }
+    .flack, .gothic {
+        font-size: 100%;
+    }
+    
+}
