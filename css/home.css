@@ -11,7 +11,7 @@
     width: 500px;
     height: 180px;
     color: ghostwhite;
-    box-shadow: 3px 3px 5px 0 black;
+    box-shadow: 3px 3px 5px 5px black;
     transition: all 0.3s ease;
     border-radius: 8px;
     margin: 25px 0;
@@ -23,7 +23,7 @@
     width: 600px;
     height: 230px;
     color: ghostwhite;
-    box-shadow: 3px 3px 5px 0 black;
+    box-shadow: 3px 3px 5px 5px black;
     transition: all 0.3s ease;
     border-radius: 8px;
     margin: 25px 0;
