@@ -63,19 +63,6 @@
     margin: 0 34px;
 }
 
-@media screen and (max-width: 500px) {
- .personal_card {
-    width: 400px; 
-}
-.about {
-    width: 200px;
-}
-
-.personal {
-    width: 280px;
-} 
-
-}
 
 /* 
  * EDUCATION SECTION 
@@ -110,11 +97,19 @@
      margin: 0 30px;
  }
 
+.slots p {
+    display: block;
+}
  .technion_slot {
-     display: block;
+     display: inline-block;
      padding: 20px 20px;
-     min-width: 100ch;
+     overflow-wrap: break-word;
  }
+
+ .technion_line1 {
+    min-width: 100ch; 
+ }
+
  .sp_yr {
      margin: 195px;
  }
@@ -151,3 +146,31 @@
  /* 
  * SKILLS SECTION
  */
+
+ /* MEDIA QUERIES */
+ @media screen and (max-width: 500px) {
+    .personal_card {
+       width: 400px; 
+   }
+   .about {
+       width: 200px;
+   }
+   
+   .personal {
+       width: 280px;
+   } 
+   
+   .education_card {
+    width: 450px;    
+   }
+   .sp_yr {
+       margin: 5px;
+   }
+   .sp_yr3 {
+       margin: 40px;
+    }
+    .technion_line1 {
+        min-width: 10ch;
+    }
+   }
+   
