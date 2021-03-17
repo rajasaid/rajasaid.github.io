@@ -1,4 +1,54 @@
 
 #content_title {
-    width: 115px;
+    width: 95px;
+}
+
+.content {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.personal_card {
+    display: flex;
+    flex-flow: row;
+    /* align-items: center; */
+    justify-items: left;
+    width: auto;
+    min-width: 450px;
+    min-height: 300px;
+    height: auto;
+    margin: 50px 100px;
+    box-shadow: 2px 2px 10px 0 black;
+}
+
+.about {
+    display: block;
+    padding: 20px 30px;
+    width: 500px;
+}
+
+.about header {
+    /* font-size: 100%; */
+    /* min-width: 30ch; */
+    letter-spacing: 2px;
+    padding: 10px 30px;
+}
+.about h3, .personal h3 {
+    font-weight: bolder;
+    font-size: 150%;
+    padding: 10px 30px;
+}
+.personal {
+    display: block;
+    padding: 20px 30px;
+    min-width: 150px;
+}
+.personal p {
+    font-size: 100%;
+    padding: 10px 30px;
+}
+.sp_wds {
+    margin: 0 50px;
+}
+.sp_wds2 {
+    margin: 0 34px;
 }
