@@ -31,7 +31,8 @@
 .about {
     display: block;
     padding: 20px 30px;
-    width: 400px;
+    max-width: 400px;
+    width: auto;
 }
 
 .about header {
