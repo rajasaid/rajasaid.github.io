@@ -82,11 +82,8 @@
  }
 
  .education_card h3 {
-     margin: 25px 0;
- }
-
- .education_card h3 {
-     font-size:150%;
+    margin: 25px 0; 
+    font-size:150%;
      align-self: center;
  }
 
@@ -130,22 +127,114 @@
  }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
  /* 
  * SKILLS SECTION
  */
+
+.skills_card {
+    display: flex;
+    flex-flow: column;
+    min-width: 450px;
+    max-width: 650px;
+    width: auto;
+    min-height: 400px;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px 0 black;
+    margin-bottom: 50px;
+}
+
+.skills_card h3 {
+    margin: 25px 0;
+    font-size:150%;
+    align-self: center;
+}
+.skills_card hr {
+    margin: 0 50px;
+    font-weight: bolder;
+    font-size: 150%;
+}
+.progress_bars {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: center;
+    margin: 0 20px;
+}
+
+.progress_bar {
+    display: flex;
+    width: 300px;
+}
+.progress_bar header {
+    margin: 20px 20px;
+    font-size: 120%;
+    width: 100px;
+    min-width: 10ch;
+}
+
+.cc_progress_bar, .c_progress_bar,
+.python_pb, .java_pb,
+.perl_pb, .javascript_pb,
+.html_pb, .css_pb, .sql_pb,
+.unix_pb, .ia32_pb, .react_pb {
+    width: 200px;
+    height: 20px;
+    border: 3px solid rgba(22,22,22,0.5);
+    margin:  20px 20px;
+    box-sizing: content-box;
+    border-radius: 25px;
+}
+
+.c_progress_bar > span, .cc_progress_bar > span,
+.python_pb > span, .java_pb > span,
+.perl_pb > span, .javascript_pb > span, 
+.html_pb > span,  .css_pb > span, .sql_pb > span,
+.unix_pb > span, .ia32_pb > span, .react_pb > span {
+    height: 100%;
+    display: block;
+    position: relative;
+    background-color: greenyellow;
+    border-radius: 25px;
+}
+.c_progress_bar > span > span, .cc_progress_bar > span > span,
+.python_pb > span > span, .java_pb > span > span, 
+.perl_pb > span > span, .javascript_pb > span > span, 
+.html_pb > span > span, .css_pb > span > span, .sql_pb > span > span,
+.unix_pb > span > span, .ia32_pb > span > span, .react_pb > span > span {
+    position: relative;
+    left:45%;
+}
+
+.other_skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 20px;
+}
+
+.other_skills li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 120%;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  /* MEDIA QUERIES */
  @media screen and (max-width: 500px) {
@@ -172,5 +261,9 @@
     .technion_line1 {
         min-width: 10ch;
     }
+    .skills_card {
+        width: 450px;
+    }
+
    }
    
