@@ -245,9 +245,7 @@
 .exp_slots {
     display: flex;
     flex-flow: column;
-    /* justify-content: left; */
     align-self: center;
-    /* align-items: center; */
     margin: 0 30px;
 }
 
@@ -257,9 +255,6 @@
 
 .exp_card p {
     display: block;
-    /* font-size: 120%; */
-    /* word-wrap: none; */
-    /* min-width: 100ch; */
 }
 
 .exp_card span {
@@ -271,9 +266,38 @@
     min-width: 20ch;
 }
 
+/* Languages */
 
+.lang_card {
+    display: flex;
+    flex-flow: column;
+    min-width: 450px;
+    max-width: 650px;
+    width: auto;
+    min-height: 150px;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px 0 black;
+    margin-bottom: 50px;
+}
 
+.lang_card h3 {
+    margin: 25px 0;
+    font-size:150%;
+    align-self: center;
+}
 
+.lang_card ul {
+    display: flex;
+    align-self: center;
+    flex-flow: column;
+    flex-wrap: wrap;
+}
+
+.lang_card li {
+    padding: 10px 20px;
+    display: inline-block;
+}
 
 
 
@@ -314,6 +338,8 @@
     .exp_card {
         width: 450px;
     }
-    
+    .lang_card {
+        width: 450px;
+    }
    }
    
