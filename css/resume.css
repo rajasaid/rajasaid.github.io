@@ -261,7 +261,7 @@
     display: inline-block;
 }
 
-.it_slot, .intel_slot, .ceragon_slot, .math_slot, .camelot_slot, .mobile_slot {
+.imperva_slot, .it_slot, .intel_slot, .ceragon_slot, .math_slot, .camelot_slot, .mobile_slot {
     display: block;
     min-width: 20ch;
 }
