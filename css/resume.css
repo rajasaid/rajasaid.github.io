@@ -1,4 +1,24 @@
 
+.resume_box {
+    display: flex;
+    justify-content: center;
+    background: url('../img/Resume_RajaSaid.jpg') no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    width:45vw;
+    height: 100vh;
+    /*align-self: center;*/
+    border-radius: 20px;
+    /*mergin-left: 100px;*/
+    background-position: center;
+}
+.resume_box:hover {
+    width: 75vw;
+    height: 180vh;
+}
+
 #content_title {
     width: 95px;
 }
@@ -7,339 +27,14 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.cards {
-    align-self: center;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-/* ABOUT SECTION */
-.personal_card {
-    display: flex;
-    flex-flow: row;
-    /* align-items: center; */
-    justify-items: left;
-    max-width: 850px;
-    width: auto;
-    min-width: 450px;
-    min-height: 300px;
-    height: auto;
-    margin: 50px 0;
-    box-shadow: 2px 2px 10px 0 black;
-    overflow: hidden;
-}
-
-.about {
-    display: block;
-    padding: 20px 30px;
-    max-width: 400px;
-    width: auto;
-}
-
-.about header {
-    letter-spacing: 2px;
-    padding: 10px 30px;
-}
-.about h3, .personal h3 {
-    font-weight: bolder;
-    font-size: 150%;
-    padding: 10px 30px;
-}
-.personal {
-    display: block;
-    padding: 20px 30px;
-    min-width: 300px;
-    width:auto;
-}
-.personal p {
-    font-size: 100%;
-    padding: 10px 30px;
-}
-.sp_wds {
-    margin: 0 50px;
-}
-.sp_wds2 {
-    margin: 0 34px;
-}
-
-
-/* 
- * EDUCATION SECTION 
- */
-
- .education_card {
-     display: flex;
-     flex-flow: column;
-     min-width: 450px;
-     max-width: 850px;
-     width: auto;
-     min-height: 400px;
-     height: auto;
-     overflow: hidden;
-     box-shadow: 2px 2px 10px 0 black;
-     margin-bottom: 50px;
- }
-
- .education_card h3 {
-    margin: 25px 0; 
-    font-size:150%;
-     align-self: center;
- }
-
- .slots {
-     display: flex;
-     flex-flow:column;
-     justify-content: left;
-     margin: 0 30px;
- }
-
-.slots p {
-    display: block;
-}
- .technion_slot {
-     display: inline-block;
-     padding: 20px 20px;
-     overflow-wrap: break-word;
- }
-
- .technion_line1 {
-    min-width: 100ch; 
- }
-
- .sp_yr {
-     margin: 195px;
- }
- .sp_yr2 {
-     margin: 40px;
- }
- .sp_yr3 {
-     margin: 100px;
- }
- .iitc_slot {
-     display: block;
-     padding: 20px 20px;
- }
-
- .web_slot {
-     display: block;
-     padding: 20px 20px;
- }
-
-
- /* 
- * SKILLS SECTION
- */
-
-.skills_card {
-    display: flex;
-    flex-flow: column;
-    min-width: 450px;
-    max-width: 650px;
-    width: auto;
-    min-height: 400px;
-    height: auto;
-    overflow: hidden;
-    box-shadow: 2px 2px 10px 0 black;
-    margin-bottom: 50px;
-}
-
-.skills_card h3 {
-    margin: 25px 0;
-    font-size:150%;
-    align-self: center;
-}
-.skills_card hr {
-    margin: 0 50px;
-    font-weight: bolder;
-    font-size: 150%;
-}
-.progress_bars {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-self: center;
-    margin: 0 20px;
-}
-
-.progress_bar {
-    display: flex;
-    width: 300px;
-}
-.progress_bar header {
-    margin: 20px 20px;
-    font-size: 120%;
-    width: 100px;
-    min-width: 10ch;
-}
-
-.cc_progress_bar, .c_progress_bar,
-.python_pb, .java_pb,
-.perl_pb, .javascript_pb,
-.html_pb, .css_pb, .sql_pb,
-.unix_pb, .ia32_pb, .react_pb {
-    width: 200px;
-    height: 20px;
-    border: 3px solid rgba(22,22,22,0.5);
-    margin:  20px 20px;
-    box-sizing: content-box;
-    border-radius: 25px;
-}
-
-.c_progress_bar > span, .cc_progress_bar > span,
-.python_pb > span, .java_pb > span,
-.perl_pb > span, .javascript_pb > span, 
-.html_pb > span,  .css_pb > span, .sql_pb > span,
-.unix_pb > span, .ia32_pb > span, .react_pb > span {
-    height: 100%;
-    display: block;
-    position: relative;
-    background-color: greenyellow;
-    border-radius: 25px;
-}
-.c_progress_bar > span > span, .cc_progress_bar > span > span,
-.python_pb > span > span, .java_pb > span > span, 
-.perl_pb > span > span, .javascript_pb > span > span, 
-.html_pb > span > span, .css_pb > span > span, .sql_pb > span > span,
-.unix_pb > span > span, .ia32_pb > span > span, .react_pb > span > span {
-    position: relative;
-    left:45%;
-}
-
-.other_skills ul {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px 20px;
-}
-
-.other_skills li {
-    display: inline-block;
-    padding: 0 10px;
-    font-size: 120%;
-    list-style: none;
-}
-
-/* 
- * PROFESSIONAL EXPERIENCE 
- */
-
- .exp_card {
-    display: flex;
-    flex-flow: column;
-    min-width: 450px;
-    max-width: 850px;
-    width: auto;
-    min-height: 400px;
-    height: auto;
-    overflow: hidden;
-    box-shadow: 2px 2px 10px 0 black;
-    margin-bottom: 50px;
-}
-
-.exp_card h3 {
-    margin: 25px 0;
-    font-size:150%;
-    align-self: center;
-}
-
-.exp_slots {
-    display: flex;
-    flex-flow: column;
-    align-self: center;
-    margin: 0 30px;
-}
-
- .exp_slots hr {
-    margin: 25px 25px;
-} 
-
-.exp_card p {
-    display: block;
-}
-
-.exp_card span {
-    display: inline-block;
-}
-
-.imperva_slot, .it_slot, .intel_slot, .ceragon_slot, .math_slot, .camelot_slot, .mobile_slot {
-    display: block;
-    min-width: 20ch;
-}
-
-/* Languages */
-
-.lang_card {
-    display: flex;
-    flex-flow: column;
-    min-width: 450px;
-    max-width: 650px;
-    width: auto;
-    min-height: 150px;
-    height: auto;
-    overflow: hidden;
-    box-shadow: 2px 2px 10px 0 black;
-    margin-bottom: 50px;
-}
-
-.lang_card h3 {
-    margin: 25px 0;
-    font-size:150%;
-    align-self: center;
-}
-
-.lang_card ul {
-    display: flex;
-    align-self: center;
-    flex-flow: column;
-    flex-wrap: wrap;
-}
-
-.lang_card li {
-    padding: 10px 20px;
-    display: inline-block;
-}
-
-
-
-
-
-
-
-
- /* MEDIA QUERIES */
- @media screen and (max-width: 500px) {
-    .personal_card {
-       width: 400px; 
-   }
-   .about {
-       width: 200px;
-   }
-   
-   .personal {
-       width: 280px;
-   } 
-   
-   .education_card {
-    width: 450px;    
-   }
-   .sp_yr {
-       margin: 5px;
-   }
-   .sp_yr3 {
-       margin: 40px;
+@media screen and (max-width: 450px) {
+    
+    .resume_box {
+        width: 430px;
+        background-size: contain;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
     }
-    .technion_line1 {
-        min-width: 10ch;
-    }
-    .skills_card {
-        width: 450px;
-    }
-
-    .exp_card {
-        width: 450px;
-    }
-    .lang_card {
-        width: 450px;
-    }
-   }
-   
+    
+}

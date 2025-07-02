@@ -6,231 +6,52 @@
     <meta name="description" content="Personal Portfolio Pages">
     <meta name="author" content="Raja Said">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/resume.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/resume.css">
     <title>Raja Said's Resume</title>
   </head>
   <body>
-      <div class="container">
-        <div class="header">
-          <div class="person_box">
-            <div class="person_img">
-              <img src="img/me3.jpg" alt="Raja Said website header image">
-              <div class="circle three"></div>
+      <div class="navbar">
+        <img src="http://icons.iconarchive.com/icons/sirubico/black-metal/128/Web-b-icon.png" alt="globe image">
+        <nav>
+            <ul class="nav_menu">
+                <li><a href="index.html" class="home htmltxt">PORTFOLIO</a></li> 
+                <li><a href="resume.html" class="resume htmltxt">RESUME</a></li>
+                <li class="push"><a href="blog.html" class="blog htmltxt">BLOG</a></li>
+            </ul>
+        </nav>      
+      </div>  
+        <div class="container">
+            <div class="header">
+                <div class=box>
+                    <div class="person_img">
+                        <img src="img/me3.jpg" alt="Raja Said's image">
+                        <div class="circle three"></div>
+                    </div>
+                </div>
+                <div class="box">  
+                    <div class="vertical"></div>
+                </div>
+                <div class="box">   
+                    <div class="person_title">
+                        <header class="name">Raja Said</header>
+                        <h3 class="intro"> A developers Portfolio & Home Page</h3>
+                    </div>
+                </div>
+                <div class="box">    
+                    <div class="vertical second"></div>
+                </div>
+                <div class="box certificate">   
+                </div> 
             </div>
-            <div class="vertical"></div>
-            <div class="person_title">
-              <header class="name">Raja Said</header>
-              <p class="intro"> Software Engineer and Developer's Home-Page</p>
-            </div> 
-          </div>
-        </div>
-        <div class="menu">
-            <div class="titles">
-              <ul>Menu</ul>
-                <li class="link"><a href="#start" class="title">About</a></li>
-                <li class="link"><a href="#education_start" class="title">Education</a></li>
-                <li class="link"><a href="#skills_start" class="title">Skills</a></li>
-                <li class="link"><a href="#experience_start" class="title">Experience</a></li>
+            <div class="content">
+                <header id="content_title">RESUME</header>
+                <div class="resume_box"></div>
             </div>
-          </div>
-          <div class="navbar">
-            <div class="nav_brand">
-              <img src="http://icons.iconarchive.com/icons/sirubico/black-metal/128/Web-b-icon.png" alt="globe image">
-            </div>
-            <nav>
-              <div class="toggle_navbar" id="toggle_navbar">
-                <input type="checkbox" />
-                <div class="hamburger">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>    
-                <ul class="nav_menu">
-                  <li><a href="index.html" class="home htmltxt">HOME</a></li> 
-                  <li><a href="how.html" class="how-tos htmltxt">HOW-TO</a></li>
-                  <li><a href="blog.html" class="blog htmltxt">BLOG</a></li>
-                  <li><a href="resume.html" class="resume htmltxt">RESUME</a></li>
-                </ul>
-              </div>
-            </nav>      
-          </div>
-          <div class="content">
-            <div class="icons">
-              <!-- The social media icon bar -->
-              <div class="icon-bar">
-                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-              </div>
-            </div>
-            <header id="content_title">RESUME</header>
-            <div class="cards">
-                <div class="personal_card">
-                    <div class="about" id="start">
-                        <h3>About</h3>    
-                        <header>A Senior Software Developer, Web & Application Programmer.</header>
-                    </div>
-                    <div class="personal">
-                        <h3>Basic Information</h3>
-                        <p><b>NAME:</b> <span class="sp_wds">&nbsp;&nbsp;&nbsp;Raja Said</span></p>
-                        <p><b>PHONE:</b> <span class="sp_wds">+972-549241744</span></p>
-                        <p><b>EMAIL:</b> <span class="sp_wds">&nbsp;&nbsp;rs.behm@gmail.com</span></p>
-                        <p><b>LINKEDIN:</b> <span class="sp_wds2"><a href="https://www.linkedin.com/in/rajasaidmultidisciplinary">My Linked-in</a> </span></p>
-                        <p><b>WEBSITE:</b> <span class="sp_wds2">&nbsp;<a href="http://rajasaid.github.io">My WebSite</a> </span></p>
-                    </div>
-                </div>
-                <div class="education_card">
-                    <h3 id="education_start">Education</h3>
-                    <div class="slots">
-                        <div class="technion_slot" >
-                            <p class="technion_line1"><b>B.S.C.</b> in Software Engineering with Average of <b>80</b>. <span class="sp_yr"><b>1997-2001</b></span></p>
-                            <p><b>Techion - </b> Israel Institue of technology.</p>
-                            <p><b>Final Project:</b> Built a C++ framework using only Meta-Programming techniques for the applicabolity of Multi-Grid Mathematical methods on Matrices.</p>
-                        </div>
-                        <hr/>
-                        <div class="iitc_slot">
-                            <p><b>Advanced Course</b> on real-time & embedded systems with Average of <b>98</b>. <span class="sp_yr2"><b>2009-2010</b></span></p>
-                            <p><b>IITC - </b> Israel Institue of technology College.</p>
-                            <p><b>Final Project: </b> Built and Integrated an <b>ftp</b> server in accordance with RFC 959 for Marvell's Sheva-Plug target.</p>
-                        </div>
-                        <hr/>
-                        <div class="web_slot">
-                            <p><b>Web Development Course</b> with Python, Javascript, Html & CSS. <span class="sp_yr3"><b>2020</b></span></p>
-                            <p><b>HarvardX - </b> Continuing education online course</p>
-                            <p><b>Final Project:</b> <a href="https://dry-springs-14532.herokuapp.com"> Pizza Orders Online</a> service app built via the <b>Django</b> framework</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills_card">
-                    <h3 id="skills_start">Technical Skills</h3>
-                    <div class="progress_bars">
-                        <div class="progress_bar">
-                            <header><b>C - </b></header>
-                            <div class="c_progress_bar"> <span style="width: 90%;"><span>90%</span></span></div>
-                        </div>
-                        <div class="progress_bar">
-                            <header><b>C++11 - </b></header>
-                            <div class="cc_progress_bar"><span style="width: 80%;"><span>80%</span></span></div>
-                        </div>
-                        <div class="progress_bar">
-                            <header><b>Python -</b></header>
-                            <div class="python_pb"><span style="width: 80%;"><span>80%</span></span></div>
-                        </div>
-                        <div class="progress_bar">
-                            <header><b>Java -</b></header>
-                            <div class="java_pb"><span style="width: 75%;"><span>75%</span></span></div>
-                        </div>
-                        <div class="progress_bar">
-                            <header><b>Perl -</b></header>
-                            <div class="perl_pb"><span style="width: 70%;"><span>70%</span></span></div>
-                        </div>
-                        <div class="progress_bar">
-                            <header><b>Javascript -</b></header>
-                            <div class="javascript_pb"><span style="width: 70%;"><span>70%</span></span></div>
-                        </div>
-                        <div class="progress_bar">
-                            <header><b>HTML -</b></header>
-                            <div class="html_pb"><span style="width: 75%;"><span>75%</span></span></div>
-                        </div>
-                        <div class="progress_bar">
-                            <header><b>CSS -</b></header>
-                            <div class="css_pb"><span style="width: 75%;"><span>75%</span></span></div>
-                        </div>
-                        <div class="progress_bar">
-                            <header><b>UNIX scripting -</b></header>
-                            <div class="unix_pb"><span style="width: 80%;"><span>80%</span></span></div>
-                        </div>
-                        <div class="progress_bar">
-                            <header><b>IA32 -</b></header>
-                            <div class="ia32_pb"><span style="width: 70%;"><span>70%</span></span></div>
-                        </div>
-                        <div class="progress_bar">
-                            <header><b>React.js -</b></header>
-                            <div class="react_pb"><span style="width: 60%;"><span>60%</span></span></div>
-                        </div>
-                        <div class="progress_bar">
-                            <header><b>SQL -</b></header>
-                            <div class="sql_pb"><span style="width: 80%;"><span>80%</span></span></div>
-                        </div>
-                    </div>
-                    <hr/>
-                    <h3>Experience with:</h3>
-                    <div class="other_skills">
-                        <ul>
-                            <li>Android</li>
-                            <li>Windows</li>
-                            <li>Linux & Embedded Linux</li>
-                            <li>TCP/IP</li>
-                            <li>Ethernet</li>
-                            <li>OOP & OOD</li>
-                            <li>security</li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="exp_card">
-                    <h3 id="experience_start">Professional Experience</h3>
-                    <div class="exp_slots">
-                        <div class="imperva_slot">
-                            <p><b>Senior Developer</b> August 2021 - now <span style="width: 155px;"></span> <b>Imperva</b></p>
-                            <p>Project - <b>DNS</b> (domain name system)</p>
-                            <p>Responsible for developing managed DNS features at highest priorities, using the C programming language.</p>
-                        </div>
-                        <hr/>
-                        <div class="mobile_slot">
-                            <p><b>Mobile Developer </b> Year 2020, <span style="width: 200px;"></span> <b>Self-Employed</b></p>
-                            <p>Projects - "Notes101". Developed and deployed an android application in Java for making notes with photos, sharing them as well as managing passwords with encrypted database.</p>
-                        </div>
-                        <hr/>
-                        <div class="it_slot">
-                            <p><b>IT Advisor & Support</b> Jan 2017 - December 2019, <span style="width: 65px;"></span><b>EuroCSE</b> Organisation | Cambridge</p>
-                            <p>IT Advisor online - advised on building and installing new PCs while addressing security and reliability focus issues.</p>
-                            <p>IT Support online - helped in bringing-up to faulty machines.</p>
-                        </div>
-                        <hr/>
-                        <div class="intel_slot">
-                            <p><b>CPU Validation Engineer </b> Jan 2012 - June 2016, <span style="width: 75px;"></span> <b>Intel</b> Corporation | Haifa</p>
-                            <p>Project - <b>SGX</b> (Software Guard Extension).</p>
-                            <p>Patch load validation owner July 2013 - 2016, <b>resposnsible</b> for the CPU patch load protocol validation, part of the SGX feature.
-                            Practicing diverse state of the art pre-silicon validation methodologies and techniques. Extensive work of debug to embedded C code. worked with C, C++, Python, Perl & microcode.</p>
-                        </div>
-                        <hr/>
-                        <div class="ceragon_slot">
-                            <p><b>RT Embedded SW Engineer </b> Jan 2010 - December 2011, <span style="width: 20px;"></span><b>Ceragon</b> Networks</p>
-                            <p>Project - Genesis Metro-Ethernet Switch.</p>
-                            <p>Switch Application Developer: developed <b>local-remote</b> protocol.</p>
-                            <p>HW - SW Co Design Engineer: did bring-up to <b>PHYs</b>(Transceivers), enabled deployment of a Network processor by integrating the BSP and the driver.</p>
-                        </div>
-                        <hr/>
-                        <div class="match_slot">
-                            <p><b>Math Tutor </b> 2005 - 2013, <span style="width: 235px;"></span><b>Technion</b>Alumni</p>                            
-                            <p>In parallel to other jobs I did <b>Math Tutoring</b> for highschool students some as part of a <b>Technion Alumni</b> program and some by self-employment</p>
-                        </div>
-                        <hr/>
-                        <div class="camelot_slot">
-                            <p><b>C++ Developer </b> 2000 - 2001, <span style="width: 215px;"></span><b>Camelot </b>ltd. (student)</p>
-                            <p>Project OpenSSL - I integrated an open source imlementation of SSL into our product communication layer</p>
-                            <p>Also did some validation to the software products middleware classes.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="lang_card">
-                    <h3>Languages</h3>
-                    <ul>
-                        <li><b>Arabic</b> - mother tongue</li>
-                        <li><b>Hebrew</b> - fluent</li>
-                        <li><b>English</b> - Excellent level spoken and written</li>
-                    </ul>
-
-                </div>
-            </div> 
-          </div>
+         </div>   
         <footer class="footer"><p class="last">Copyright<span>&#169;</span> By Raja Said 2021. All Rights Reserved.</p></footer> 
-      </div>
   </body>
 </html>

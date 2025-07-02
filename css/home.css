@@ -1,21 +1,33 @@
-.card_box {
+/*.card_box {
     display: flex;
     flex-wrap: wrap;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     margin: 25px 0;
+}*/
+.content {
+    height: 100%;
+}
+.card_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(430px,1fr));
+    justify-content: center;
 }
 
+.zone {
+    margin: 20px;
+
+}
 .card_you_programming1, .card_you_programming2 {
     
-    width: 50em;
-    height: 175px;
+    width: 90%;
+    height: 90%x;
     color: ghostwhite;
     box-shadow: 3px 3px 5px 5px black;
     transition: all 0.3s ease;
     border-radius: 8px;
-    margin: 25px 0;
+    margin-left: 1em;
     display: flex;
 }
 .card_you_programming1:hover, .card_you_programming2:hover { 
@@ -24,8 +36,8 @@
 
 .card_notes101 {
     background: linear-gradient(rgba(184,134,11,0.5), rgba(184,134,11,1));
-    width: 50em;
-    height: 230px;
+    width: 90%;
+    height: 90%;
     color: ghostwhite;
     box-shadow: 3px 3px 5px 5px black;
     transition: all 0.3s ease;
@@ -33,6 +45,8 @@
     margin: 25px 0;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    margin-left: 1em;
 }
 
 .card_notes101:hover { 
@@ -40,6 +54,7 @@
 }
 .card_notes101 img {
     padding: 20px 20px;
+    align-self: center;
 }
 
 .card_you_programming1 {
@@ -52,29 +67,26 @@
 
 .content iframe {
     padding: 20px 20px;
+    align-self: center;
 }
 
 
 .application, .readless, .flack {
     margin: 10px 0px;
-    font-size: 125%;
-    max-width: 100ch;
     overflow: hidden;
     display: inline-block;
-    min-width: 10ch;
+    width: 100%;
+    align-self: center;
 }
 
 
 @media screen and (max-width: 500px) {
     
-    .card_notes101, .card_you_programming1, .card_you_programming2 {
+    /*.card_notes101, .card_you_programming1, .card_you_programming2 {
         width: 450px;
-    }   
-    .application, .readless  { 
+    }  */ 
+    .application, .readless, .flack  { 
         font-size: 80%;
-    }
-    .flack, {
-        font-size: 100%;
     }
     
 }
